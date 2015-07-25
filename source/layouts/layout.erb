@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <title>PhotoscreamApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link type="text/css" href="http://netdna.bootstrapcdn.com/bootswatch/3.0.0/cosmo/bootstrap.min.css" rel="stylesheet">
+  <link type="text/css" href="css/all.css" rel="stylesheet">
+  <link type="text/css" href="css/normalize.css" rel="stylesheet">
+</head>
+
+<body background="images/background.png">
+  <%= yield %>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="javascripts/app.js"></script>
+  <script src="javascripts/instagram/factory.js"></script>
+  <script src="javascripts/instagram/controller.js"></script>
+
+  <script>
+  setTimeout(function(){
+     window.location.reload(1);
+  }, 65000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+    <div width="100%" ng-controller="InstagramCtrl">
+        <center>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive img-rounded" style="height:600px" src="images/start.jpg" />
+                    <div class="carousel-caption" style="background-color: #336699; opacity:0.8;">
+                        <div style="opacity:1.0; font-color:white;">
+                        <h1><b>#bodaChicoPanchoyAle</b></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" ng-repeat="item in example1.items">
+                    <img height="100%" class="img-responsive img-rounded" ng-src="{{ item.images.standard_resolution.url }}" src="" alt="" />
+                    <div class="carousel-caption" style="background-color: #336699; opacity:0.8;">
+                        <div style="opacity:1.0; font-color:white;">
+                        <b><h4>{{item.caption.from.full_name}} dice: </h4></b>{{item.caption.text}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-show="example1.error" class="alert alert-danger">
+              <strong>Warning!</strong><br/>{{example1.error}}.
+            </div>
+        </div>
+        </center>
